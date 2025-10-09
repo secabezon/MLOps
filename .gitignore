@@ -1,1 +1,20 @@
-venv
+# entornos
+.venv/
+venv/
+env/
+
+# python cache
+__pycache__/
+*.pyc
+
+# notebooks
+.ipynb_checkpoints/
+
+# datos reales (los maneja DVC)
+
+# DVC cache local
+.dvc/cache/
+
+# OS/editores
+.DS_Store
+Thumbs.db
