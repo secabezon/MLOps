@@ -1,4 +1,4 @@
 [core]
-    remote = gdrive
-['remote "gdrive"']
-    url = gdrive://1jr4CB1g_ACgAc0ByeShmGY5uncXbPHLL
+    remote = dagshub
+['remote "dagshub"']
+    url = https://dagshub.com/Pamela-ruiz9/MLOps.dvc
