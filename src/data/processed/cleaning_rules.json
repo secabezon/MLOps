@@ -15,6 +15,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 20,
+        "pct_outliers": 1.9646365422396856,
+        "cap_low": 1.0,
+        "cap_high": 4.0
+      }
     }
   ],
   "laufzeit": [
@@ -33,6 +46,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 80,
+        "pct_outliers": 7.858546168958743,
+        "cap_low": 4.0,
+        "cap_high": 42.0
+      }
     }
   ],
   "moral": [
@@ -51,6 +77,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 18,
+        "pct_outliers": 1.768172888015717,
+        "cap_low": 0.0,
+        "cap_high": 4.0
+      }
     }
   ],
   "verw": [
@@ -69,6 +108,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 127,
+        "pct_outliers": 12.475442043222005,
+        "cap_low": 0.0,
+        "cap_high": 6.0
+      }
     }
   ],
   "hoehe": [
@@ -87,6 +139,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 77,
+        "pct_outliers": 7.56385068762279,
+        "cap_low": 250.0,
+        "cap_high": 7865.0
+      }
     }
   ],
   "sparkont": [
@@ -105,6 +170,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 10,
+        "pct_outliers": 0.9823182711198428,
+        "cap_low": 1.0,
+        "cap_high": 5.0
+      }
     }
   ],
   "beszeit": [
@@ -123,6 +201,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 7,
+        "pct_outliers": 0.68762278978389,
+        "cap_low": 1.0,
+        "cap_high": 5.0
+      }
     }
   ],
   "rate": [
@@ -141,6 +232,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 4,
+        "pct_outliers": 0.3929273084479371,
+        "cap_low": 1.0,
+        "cap_high": 4.0
+      }
     }
   ],
   "famges": [
@@ -159,6 +263,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 6,
+        "pct_outliers": 0.5893909626719057,
+        "cap_low": 1.0,
+        "cap_high": 4.0
+      }
     }
   ],
   "buerge": [
@@ -177,6 +294,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 109,
+        "pct_outliers": 10.707269155206287,
+        "cap_low": 1.0,
+        "cap_high": 1.0
+      }
     }
   ],
   "wohnzeit": [
@@ -195,6 +325,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 10,
+        "pct_outliers": 0.9823182711198428,
+        "cap_low": 1.0,
+        "cap_high": 4.0
+      }
     }
   ],
   "verm": [
@@ -213,6 +356,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 8,
+        "pct_outliers": 0.7858546168958742,
+        "cap_low": 1.0,
+        "cap_high": 4.0
+      }
     }
   ],
   "alter": [
@@ -231,6 +387,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 31,
+        "pct_outliers": 3.045186640471513,
+        "cap_low": 19.0,
+        "cap_high": 64.0
+      }
     }
   ],
   "weitkred": [
@@ -249,6 +418,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 206,
+        "pct_outliers": 20.23575638506876,
+        "cap_low": 3.0,
+        "cap_high": 3.0
+      }
     }
   ],
   "wohn": [
@@ -267,6 +449,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 295,
+        "pct_outliers": 28.978388998035363,
+        "cap_low": 2.0,
+        "cap_high": 2.0
+      }
     }
   ],
   "bishkred": [
@@ -285,6 +480,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 22,
+        "pct_outliers": 2.161100196463654,
+        "cap_low": 1.0,
+        "cap_high": 3.0
+      }
     }
   ],
   "beruf": [
@@ -303,6 +511,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 382,
+        "pct_outliers": 37.524557956778,
+        "cap_low": 3.0,
+        "cap_high": 3.0
+      }
     }
   ],
   "pers": [
@@ -321,6 +542,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 175,
+        "pct_outliers": 17.190569744597248,
+        "cap_low": 2.0,
+        "cap_high": 2.0
+      }
     }
   ],
   "telef": [
@@ -339,6 +573,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 5,
+        "pct_outliers": 0.4911591355599214,
+        "cap_low": 1.0,
+        "cap_high": 2.0
+      }
     }
   ],
   "gastarb": [
@@ -357,6 +604,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 51,
+        "pct_outliers": 5.009823182711198,
+        "cap_low": 2.0,
+        "cap_high": 2.0
+      }
     }
   ],
   "kredit": [
@@ -375,6 +635,19 @@
         NaN,
         NaN
       ]
+    },
+    {
+      "cast_to_int64": "success"
+    },
+    {
+      "outlier_detection": {
+        "method": "IQR",
+        "k": 1.5,
+        "n_outliers": 8,
+        "pct_outliers": 0.7858546168958742,
+        "cap_low": 0.0,
+        "cap_high": 1.0
+      }
     }
   ]
 }
