@@ -1,0 +1,380 @@
+{
+  "laufkont": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 15,
+      "n_missing_after": 19
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "laufzeit": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 10,
+      "n_missing_after": 11
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "moral": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 17,
+      "n_missing_after": 18
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "verw": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 16,
+      "n_missing_after": 22
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "hoehe": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 8,
+      "n_missing_after": 12
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "sparkont": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 12,
+      "n_missing_after": 15
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "beszeit": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 17,
+      "n_missing_after": 19
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "rate": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 9,
+      "n_missing_after": 12
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "famges": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 7,
+      "n_missing_after": 11
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "buerge": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 13,
+      "n_missing_after": 16
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "wohnzeit": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 15,
+      "n_missing_after": 17
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "verm": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 11,
+      "n_missing_after": 15
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "alter": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 11,
+      "n_missing_after": 12
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "weitkred": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 10,
+      "n_missing_after": 14
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "wohn": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 5,
+      "n_missing_after": 9
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "bishkred": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 12,
+      "n_missing_after": 20
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "beruf": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 12,
+      "n_missing_after": 15
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "pers": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 8,
+      "n_missing_after": 10
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "telef": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 8,
+      "n_missing_after": 16
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "gastarb": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 15,
+      "n_missing_after": 18
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ],
+  "kredit": [
+    "str_strip_and_normalize",
+    "replace_common_missing_tokens",
+    "coerce_to_numeric",
+    {
+      "n_missing_before": 16,
+      "n_missing_after": 20
+    },
+    {
+      "sample_problem_vals": [
+        NaN,
+        NaN,
+        NaN,
+        NaN,
+        NaN
+      ]
+    }
+  ]
+}
