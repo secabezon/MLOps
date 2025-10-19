@@ -5,23 +5,20 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from xgboost import XGBClassifier
+import preprocessing
 
 
 class split:
 
-    def __init__(self, X, y):
+    def __init__(self, preprocessing: preprocessing, col_obj):
         super().__init__
-        self.X=X
-        self.y=y
+        self.X=preprocessing.delete_cols(self,col_obj)
+        self.y=preprocessing[col_obj]
 
     def split_df(self):
         X=self.X
         y=self.y
-        if y is not None:
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y if y.nunique()<=10 else None)
-        else:
-            X_train, X_test = train_test_split(X, test_size=0.2, random_state=42)
-            y_train = y_test = None
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y if y.nunique()<=10 else None)
         return X_train, X_test, y_train, y_test
     
 class train:
