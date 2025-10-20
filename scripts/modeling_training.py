@@ -11,9 +11,9 @@ from preprocessing import preprocessing
 class split:
 
     def __init__(self, preprocessing: preprocessing, col_obj):
-        super().__init__
-        self.X=preprocessing.delete_cols(self,col_obj)
-        self.y=preprocessing[col_obj]
+        super().__init__()
+        self.y=preprocessing.df[col_obj]
+        self.X=preprocessing.delete_cols(col_obj).df
 
     def split_df(self):
         X=self.X
@@ -43,14 +43,6 @@ class train:
         )
 
         xgb_clasif=xgb.fit(X_train,y_train)
-        return xgb_clasif
-    
-    def reglog(self):
-        X_train= self.X_train
-        y_train= self.y_train
-        logreg = LogisticRegression(max_iter=1000, solver='lbfgs')
-
-        xgb_clasif=logreg.fit(X_train,y_train)
         return xgb_clasif
     
     def reglog(self):

@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 class predict_eval:
 
     def __init__(self, model: train):
-        super().__init__
+        super().__init__()
         self.model=model
 
     def predict(self, x_test):
