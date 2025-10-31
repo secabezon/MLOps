@@ -28,13 +28,13 @@ class train:
         self.Split = Split
         self.X_train, self.X_test, self.y_train, self.y_test = self.Split.split_df()
 
-    def xgboost(self):
+    def xgboost(self,n_estimators,learning_rate,max_depth):
         X_train= self.X_train
         y_train= self.y_train
         xgb = XGBClassifier(
-            n_estimators=300,    
-            learning_rate=0.1,    
-            max_depth=6,          
+            n_estimators=n_estimators,    
+            learning_rate=learning_rate,    
+            max_depth=max_depth,          
             subsample=0.8,         
             colsample_bytree=0.8,   
             random_state=42,
@@ -45,18 +45,18 @@ class train:
         xgb_clasif=xgb.fit(X_train,y_train)
         return xgb_clasif
     
-    def reglog(self):
+    def reglog(self,max_iter):
         X_train= self.X_train
         y_train= self.y_train
-        reglog = LogisticRegression(max_iter=1000, solver='lbfgs')
+        reglog = LogisticRegression(max_iter=max_iter, solver='lbfgs')
 
         reglog_clasif=reglog.fit(X_train,y_train)
         return reglog_clasif
     
-    def rf(self):
+    def rf(self,n_estimators,random_state,n_jobs):
         X_train= self.X_train
         y_train= self.y_train
-        rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
+        rf = RandomForestClassifier(n_estimators=n_estimators, random_state=random_state, n_jobs=n_jobs)
 
         rf_clasif=rf.fit(X_train,y_train)
         return rf_clasif
