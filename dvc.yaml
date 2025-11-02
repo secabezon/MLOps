@@ -1,0 +1,11 @@
+stages:
+  train:
+    cmd: python scripts/dvc_train.py --raw src/data/processed/german_credit_clean.csv --model rf --experiment dvc_experiment --no-mlflow-autolog
+    deps:
+      - scripts/dvc_train.py
+      - scripts/main.py
+      - src/pipelines/sklearn_pipeline.py
+      - src/models/trainer.py
+      - src/data/processed/german_credit_clean.csv
+    outs:
+      - src/models/artifacts/
