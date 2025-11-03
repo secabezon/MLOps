@@ -1,0 +1,33 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python scripts/dvc_train.py --raw 
+      src/data/processed/german_credit_clean.csv --model rf --experiment 
+      dvc_experiment --no-mlflow-autolog
+    deps:
+    - path: scripts/dvc_train.py
+      hash: md5
+      md5: 2d8d8aea2ef36ce5934325c44a2beee4
+      size: 3270
+    - path: scripts/main.py
+      hash: md5
+      md5: c5d270338f9e523f5f1587beb994389d
+      size: 7964
+    - path: src/data/processed/german_credit_clean.csv
+      hash: md5
+      md5: f2a51491b51936810d1c78677109d55f
+      size: 52259
+    - path: src/models/trainer.py
+      hash: md5
+      md5: 6b102e6c033a1e065a7137bd7fb67033
+      size: 2668
+    - path: src/pipelines/sklearn_pipeline.py
+      hash: md5
+      md5: 2929c664174d60ee9247e4ab9872f9f8
+      size: 3231
+    outs:
+    - path: src/models/artifacts/
+      hash: md5
+      md5: 20796b2984cf483eadde1df06b4dc993.dir
+      size: 3142912
+      nfiles: 4

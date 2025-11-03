@@ -142,3 +142,17 @@ help:
 		printf "\n"; \
 	}' \
 	| more $(shell test $(shell uname) = Darwin && echo '--no-init --raw-control-chars')
+
+## Run DVC repro for the pipeline
+repro:
+	@echo "Running DVC repro..."
+	dvc repro
+
+## Show DVC DAG (ASCII)
+dag:
+	@echo "DVC DAG (ASCII):"
+	dvc dag --ascii
+
+## Run pipeline and then show DAG
+pipeline: repro dag
+	@echo "Done."

@@ -10,6 +10,18 @@ __pycache__/
 # C extensions
 *.so
 
+# entornos
+.venv/
+venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
 # Distribution / packaging
 .Python
 venv/
@@ -93,3 +105,17 @@ target/
 # Mypy cache
 .mypy_cache/
 /models
+
+# DVC and MLflow artifacts (do not commit large experiment stores)
+mlruns/
+.mlflow/
+
+# Model artifacts created by training scripts
+# ignore binary artifacts but allow .dvc files so we can track them in git
+src/models/artifacts/*
+!src/models/artifacts/*.dvc
+
+# Processed data (track with DVC)
+# ignore processed CSVs but allow .dvc files
+src/data/processed/*.csv
+!src/data/processed/*.dvc
