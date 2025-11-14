@@ -8,7 +8,10 @@ from pathlib import Path
 import argparse
 import json
 import sys
-
+from .modeling_training import split, train
+from .preprocessing import load, preprocessing
+from .predict_eval import predict_eval
+import joblib
 # Ensure project root is importable so `from src...` works when running
 # the script from the repo root, VSCode, or CI systems.
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -195,6 +198,46 @@ def main(argv=None):
             print(f"Saved model to {model_file} and metrics to {metrics_file}")
         except Exception as e:
             print('Warning: failed to save artifacts locally:', e)
+
+def main_predict(input_data):
+    
+    artifact_dir = Path(__file__).resolve().parents[1] / 'src' / 'models' / 'artifacts'
+    files = list(artifact_dir.glob("*.joblib"))
+    if not files:
+        raise RuntimeError("No hay modelos entrenados. Debes correr main() con --train primero.")
+
+    latest_model = max(files, key=lambda x: x.stat().st_mtime)
+    model = joblib.load(latest_model)
+
+    missingvals=["n/a","na","null","?","unknown","error","invalid","none",""," "]
+    if isinstance(input_data, dict):
+        df = pd.DataFrame([input_data])
+        if 'unnamed:_0' not in df.columns:
+            df['unnamed:_0'] = 0
+        proc_df=preprocessing(df)
+        proc_df=proc_df.delete_cols(['mixed_type_col'])
+        proc_df=proc_df.clean_colsname(' ','_')
+        proc_df=proc_df.normalize_miss_val(missingvals)
+        proc_df=proc_df.convert_num(proc_df.df.columns)
+        proc_df=proc_df.imputer_val(proc_df.df.columns)
+        proc_df=proc_df.cap_outliers(proc_df.df.columns, 1.5)
+        proc_df=proc_df.dropduplicates()
+        return float(model.predict(proc_df.df)[0])
+
+    if isinstance(input_data, str) and input_data.endswith(".csv"):
+        df = load(input_data)
+        if 'unnamed:_0' not in df.df.columns:
+            df.df['unnamed:_0'] = 0
+        proc_df=preprocessing(df.df)
+        proc_df=proc_df.delete_cols(['mixed_type_col'])
+        proc_df=proc_df.clean_colsname(' ','_')
+        proc_df=proc_df.normalize_miss_val(missingvals)
+        proc_df=proc_df.convert_num(proc_df.df.columns)
+        proc_df=proc_df.imputer_val(proc_df.df.columns)
+        proc_df=proc_df.cap_outliers(proc_df.df.columns, 1.5)
+        proc_df=proc_df.dropduplicates()
+        return model.predict(proc_df.df).tolist()
+    raise ValueError("input_data debe ser dict o path CSV")
 
 
 if __name__ == '__main__':

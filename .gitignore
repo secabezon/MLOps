@@ -119,4 +119,3 @@ src/models/artifacts/*
 # ignore processed CSVs but allow .dvc files
 src/data/processed/*.csv
 !src/data/processed/*.dvc
-scripts/mlartifacts/
