@@ -14,7 +14,7 @@ __pycache__/
 .venv/
 venv/
 env/
-
+mlruns/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -119,3 +119,4 @@ src/models/artifacts/*
 # ignore processed CSVs but allow .dvc files
 src/data/processed/*.csv
 !src/data/processed/*.dvc
+scripts/mlartifacts/
