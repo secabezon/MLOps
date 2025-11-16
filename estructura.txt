@@ -1,0 +1,105 @@
+.
+├── build
+│   └── lib
+│       └── src
+│           ├── __init__.py
+│           ├── data
+│           ├── features
+│           ├── models
+│           └── visualization
+├── Dockerfile
+├── docs
+│   ├── commands.rst
+│   ├── conf.py
+│   ├── dataset_modifications.md
+│   ├── dvc_pipeline.md
+│   ├── getting-started.rst
+│   ├── index.rst
+│   ├── make.bat
+│   ├── Makefile
+│   ├── ML Canvas.pptx
+│   ├── MLCanvas_South_German_Credit.docx
+│   ├── MLOps-Equipo5.-Fase 2pptx.pptx
+│   ├── Proyecto Fase 1.pdf
+│   └── Proyecto Fase 2.pdf
+├── dvc.lock
+├── dvc.yaml
+├── estructura.txt
+├── LICENSE
+├── Makefile
+├── notebooks
+│   ├── EDA_german_credit.ipynb
+│   ├── EDA_v0_nousar.ipynb
+│   └── modeling_and_training.ipynb
+├── pyproject.toml
+├── README.md
+├── references
+├── reports
+│   ├── figures
+│   ├── top_features_logreg_mapped.csv
+│   ├── top_features_logreg.csv
+│   ├── top_features_rf_mapped.csv
+│   └── top_features_rf.csv
+├── requirements.txt
+├── scripts
+│   ├── __pycache__
+│   │   ├── main.cpython-314.pyc
+│   │   └── modeling_training.cpython-314.pyc
+│   ├── API
+│   │   ├── __pycache__
+│   │   │   └── main_fastapi.cpython-314.pyc
+│   │   ├── main_fastapi.py
+│   │   └── my_routes
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       └── router.py
+│   ├── dvc_preprocess.py
+│   ├── dvc_train.py
+│   ├── main.py
+│   ├── map_feature_names.py
+│   ├── modeling_training.py
+│   ├── predict_eval.py
+│   ├── preprocessing.py
+│   └── run_pipeline.ps1
+├── setup.py
+├── src
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-314.pyc
+│   ├── data
+│   │   ├── __init__.py
+│   │   ├── make_dataset.py
+│   │   ├── original
+│   │   │   └── german_credit_original.csv.dvc
+│   │   ├── processed
+│   │   │   ├── cleaning_rules.json
+│   │   │   └── german_credit_clean.csv.dvc
+│   │   └── raw
+│   │       └── german_credit_modified.csv.dvc
+│   ├── features
+│   │   ├── __init__.py
+│   │   ├── build_features.py
+│   │   ├── preprocessing_transformer.py
+│   │   └── preprocessor.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   ├── pipeline_logreg_v2.joblib
+│   │   ├── predict_model_v2.py
+│   │   ├── train_model_v2.py
+│   │   └── trainer.py
+│   ├── pipelines
+│   │   └── sklearn_pipeline.py
+│   ├── utils
+│   │   └── mlflow_utils.py
+│   └── visualization
+│       ├── __init__.py
+│       └── visualize.py
+├── src.egg-info
+│   ├── dependency_links.txt
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   └── top_level.txt
+├── test_environment.py
+└── tox.ini
+
+31 directories, 72 files
