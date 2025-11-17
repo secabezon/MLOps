@@ -1,0 +1,5 @@
+outs:
+- md5: bcba0f4986a01fd77cc9bd8121d79c47
+  size: 148033
+  hash: md5
+  path: pipeline_logreg_v2.joblib
