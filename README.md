@@ -507,14 +507,6 @@ Ver experimentos en: https://dagshub.com/Pamela-ruiz9/MLOps.mlflow
 
 ---
 
-## 📚 Documentación Adicional
-
-- [`docs/dvc_pipeline.md`](docs/dvc_pipeline.md) - Guía completa de DVC
-- [`docs/dataset_modifications.md`](docs/dataset_modifications.md) - Transformaciones de datos
-- [DagsHub Repo](https://dagshub.com/Pamela-ruiz9/MLOps) - Código, datos, modelos
-
----
-
 ## 🛠️ Tecnologías Utilizadas
 
 | Componente | Tecnología |
@@ -538,12 +530,6 @@ Tec de Monterrey 2025
 
 ---
 
-## 📄 Licencia
-
-Ver archivo `LICENSE` para detalles.
-
----
-
 ## 🔗 Enlaces Útiles
 
 - **Repositorio Git**: https://github.com/secabezon/MLOps
@@ -551,3 +537,4 @@ Ver archivo `LICENSE` para detalles.
 - **MLflow UI**: https://dagshub.com/Pamela-ruiz9/MLOps.mlflow
 - **Documentación FastAPI**: https://fastapi.tiangolo.com/
 - **DVC Docs**: https://dvc.org/doc
+- **Docker Hub**: https://hub.docker.com/r/ingridpamer/mlops-credit-api
