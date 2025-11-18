@@ -332,15 +332,34 @@ docker run -p 8001:8001 \
 ### Publicar en DockerHub
 
 ```powershell
-# Login
-docker login
+# Login con usuario ingridpamer
+docker login -u ingridpamer
 
 # Tag para DockerHub
-docker tag ml-service:latest <usuario>/mlops-credit:v1.0.0
+docker tag ml-service:latest ingridpamer/mlops-credit-api:v1.0.0
 
 # Push
-docker push <usuario>/mlops-credit:v1.0.0
+docker push ingridpamer/mlops-credit-api:v1.0.0
 ```
+
+### Usar Imagen desde DockerHub
+
+La imagen Docker está publicada y disponible para usar directamente:
+
+**Docker Hub Repository**: [ingridpamer/mlops-credit-api](https://hub.docker.com/r/ingridpamer/mlops-credit-api)
+
+```powershell
+# Pull de la imagen
+docker pull ingridpamer/mlops-credit-api:latest
+
+# Ejecutar contenedor
+docker run -p 8001:8001 ingridpamer/mlops-credit-api:latest
+
+# Verificar que funciona
+curl http://localhost:8001/docs
+```
+
+> **Nota**: Para publicar sin instalar Docker localmente, consulta la guía en `DOCKER_HUB_SIN_INSTALACION.md` que incluye métodos alternativos como GitHub Actions y Play with Docker.
 
 ### Optimizaciones del Dockerfile
 
