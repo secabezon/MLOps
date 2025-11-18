@@ -1,30 +1,21 @@
-# entornos
+# ==========================================
+# ENTORNOS LOCALES
+# ==========================================
 .venv/
 venv/
 env/
 
-# Byte-compiled / optimized / DLL files
+# ==========================================
+# CACHE Y ARCHIVOS COMPILADOS
+# ==========================================
 __pycache__/
 *.py[cod]
-
-# C extensions
 *.so
 
-# entornos
-.venv/
-venv/
-env/
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# C extensions
-*.so
-
-# Distribution / packaging
+# ==========================================
+# DIRECTORIOS DE DISTRIBUCIÓN / EMPAQUETADO
+# ==========================================
 .Python
-venv/
 build/
 develop-eggs/
 dist/
@@ -40,17 +31,11 @@ var/
 .installed.cfg
 *.egg
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
+# ==========================================
+# LOGS / REPORTES / TOOLS
+# ==========================================
 pip-log.txt
 pip-delete-this-directory.txt
-
-# Unit test / coverage reports
 htmlcov/
 .tox/
 .coverage
@@ -59,63 +44,58 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
 *.log
 
-# Sphinx documentation
+# ==========================================
+# DOCUMENTACIÓN
+# ==========================================
 docs/_build/
 
-# PyBuilder
-target/
-
-# DotEnv configuration
-.env
-
-# Database
-*.db
-*.rdb
-
-# Pycharm
-.idea
-
-# VS Code
+# ==========================================
+# EDITORES Y ENTORNOS
+# ==========================================
+.idea/
 .vscode/
-
-# Spyder
 .spyproject/
 
-# Jupyter NB Checkpoints
+# ==========================================
+# OTROS
+# ==========================================
 .ipynb_checkpoints/
-
-# exclude data from source control by default
-/data/
-
-# Mac OS-specific storage files
 .DS_Store
-
-# vim
 *.swp
 *.swo
-
-# Mypy cache
 .mypy_cache/
-/models
 
-# DVC and MLflow artifacts (do not commit large experiment stores)
-mlruns/
-.mlflow/
-
-# Model artifacts created by training scripts
-# ignore binary artifacts but allow .dvc files so we can track them in git
+# ==========================================
+# DATOS / MODELOS GRANDES
+# (La API no usa estos archivos directamente)
+# ==========================================
+/data/
 src/models/artifacts/*
 !src/models/artifacts/*.dvc
 
-# Processed data (track with DVC)
-# ignore processed CSVs but allow .dvc files
+# ==========================================
+# ARCHIVOS DVC (IGNORAR EN DOCKER)
+# ==========================================
+# Evitamos meter la máquina DVC o su caché dentro del contenedor
+.dvc/
+.dvcignore
+**/*.dvc
+**/.dvc/cache/*
+**/.dvc/tmp/*
+.cache/
+.cache/dvc/
+
+# ==========================================
+# MLflow artifacts (pesados e innecesarios en producción)
+# ==========================================
+mlruns/
+.mlflow/
+
+# ==========================================
+# ARCHIVOS DE DATOS PROCESADOS
+# (La API solo usa el modelo final)
+# ==========================================
 src/data/processed/*.csv
 !src/data/processed/*.dvc
