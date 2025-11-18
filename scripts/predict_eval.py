@@ -1,5 +1,5 @@
 # Sección 1: Imports y rutas
-from modeling_training import train
+from .modeling_training import train
 from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 
 class predict_eval:

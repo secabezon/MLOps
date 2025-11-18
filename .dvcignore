@@ -1,3 +1,27 @@
 # Add patterns of files dvc should ignore, which could improve
 # the performance. Learn more at
 # https://dvc.org/doc/user-guide/dvcignore
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+
+# MLflow and run artifacts
+mlruns/
+.mlflow/
+
+# Processed data (track with DVC)
+# Note: src/data/processed/ must NOT be ignored by DVC if you want to `dvc add` the cleaned CSV.
+# Removing the ignore entry below so DVC can manage the processed dataset.
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store

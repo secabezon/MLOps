@@ -1,0 +1,38 @@
+# Ignorar control de versiones
+.git
+.gitignore
+
+# Ignorar compilados
+__pycache__/
+*.pyc
+
+# Ignorar notebooks
+notebooks/
+*.ipynb
+
+# Ignorar documentación
+docs/
+*.pdf
+*.docx
+*.pptx
+*.md
+
+# Ignorar outputs de reportes
+reports/
+reports/*
+
+# Ignorar carpetas de build
+build/
+src.egg-info/
+
+# Ignorar figuras, archivos grandes
+*.csv
+*.zip
+
+# Datos locales no necesarios (pero NO ignoramos .dvc)
+data/raw/
+data/processed/
+
+# NO ignorar DVC:
+# .dvc/
+# *.dvc
